@@ -18,19 +18,19 @@ namespace TencentCloud\Ioa\V20220601\Models;
 use TencentCloud\Common\AbstractModel;
 
 /**
- * DescribeAccountGroups返回参数结构体
+ * CreateDeviceVirtualGroup返回参数结构体
  *
- * @method DescribeAccountGroupsPageResp getData() 获取账号分组详情响应数据
+ * @method CreateDeviceVirtualGroupRspData getData() 获取响应返回的data
 注意：此字段可能返回 null，表示取不到有效值。
- * @method void setData(DescribeAccountGroupsPageResp $Data) 设置账号分组详情响应数据
+ * @method void setData(CreateDeviceVirtualGroupRspData $Data) 设置响应返回的data
 注意：此字段可能返回 null，表示取不到有效值。
  * @method string getRequestId() 获取唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  * @method void setRequestId(string $RequestId) 设置唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
  */
-class DescribeAccountGroupsResponse extends AbstractModel
+class CreateDeviceVirtualGroupResponse extends AbstractModel
 {
     /**
-     * @var DescribeAccountGroupsPageResp 账号分组详情响应数据
+     * @var CreateDeviceVirtualGroupRspData 响应返回的data
 注意：此字段可能返回 null，表示取不到有效值。
      */
     public $Data;
@@ -41,7 +41,7 @@ class DescribeAccountGroupsResponse extends AbstractModel
     public $RequestId;
 
     /**
-     * @param DescribeAccountGroupsPageResp $Data 账号分组详情响应数据
+     * @param CreateDeviceVirtualGroupRspData $Data 响应返回的data
 注意：此字段可能返回 null，表示取不到有效值。
      * @param string $RequestId 唯一请求 ID，由服务端生成，每次请求都会返回（若请求因其他原因未能抵达服务端，则该次请求不会获得 RequestId）。定位问题时需要提供该次请求的 RequestId。
      */
@@ -59,7 +59,7 @@ class DescribeAccountGroupsResponse extends AbstractModel
             return;
         }
         if (array_key_exists("Data",$param) and $param["Data"] !== null) {
-            $this->Data = new DescribeAccountGroupsPageResp();
+            $this->Data = new CreateDeviceVirtualGroupRspData();
             $this->Data->deserialize($param["Data"]);
         }
 
